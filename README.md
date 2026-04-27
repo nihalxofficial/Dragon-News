@@ -8,9 +8,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - Daisy UI
 - React Icons
 - Date fns
+- React fast marquee
 
 ## Concepts
 - Routing Group
+- Image optimization
+- Font optimization
 
 
 First, run the development server:

@@ -1,10 +1,13 @@
+import BreakingNews from "@/components/shared/BreakingNews";
 import Header from "@/components/shared/Header";
 import Navbar from "@/components/shared/Navbar";
 
 const layout = ({ children }) => {
+    
     return (
-        <div>
+        <div className="container mx-auto">
             <Header />
+            <BreakingNews />
             <Navbar />
             {children}
         </div>
