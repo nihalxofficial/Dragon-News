@@ -1,4 +1,5 @@
 import LeftSideBar from "@/components/HomePage/LeftSideBar";
+import RightSideBar from "@/components/HomePage/RightSideBar";
 
 const getCategories = async () => {
   const res = await fetch("https://openapi.programming-hero.com/api/news/categories")
@@ -18,7 +19,9 @@ export default async function Home() {
       <div className="col-span-2">
         <h2 className="font-bold mb-4 text-xl">Dragon News Home</h2>
       </div>
-      <div className="">Social Icons</div>
+      <div className="">
+        <RightSideBar/>
+        </div>
     </div>
   );
 }
