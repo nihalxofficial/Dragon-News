@@ -14,17 +14,8 @@
 
 import LeftSideBar from "@/components/HomePage/LeftSideBar";
 import RightSideBar from "@/components/HomePage/RightSideBar";
+import { getCategories, getNewsByCategory } from "@/lib/data";
 
-const getCategories = async () => {
-  const res = await fetch("https://openapi.programming-hero.com/api/news/categories")
-  const data = res.json()
-  return data;
-}
-const getNewsByCategory = async (id) => {
-  const res = await fetch(`https://openapi.programming-hero.com/api/news/category/${id}`);
-  const data = res.json();
-  return data;
-}
 
 export default async function Home() {
   const loadCategories = await getCategories();
