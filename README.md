@@ -7,6 +7,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - Tailwind CSS
 - Daisy UI
 - React Icons
+- Date fns
 
 ## Concepts
 - Routing Group
