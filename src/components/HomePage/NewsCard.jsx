@@ -5,8 +5,6 @@ import { FaRegBookmark } from "react-icons/fa";
 import Link from "next/link";
 
 const NewsCard = ({ news }) => {
-    console.log(news);
-
     return (
         <Link href={`/news/${news._id}`} className="card bg-base-100  shadow-sm">
             <div className="flex justify-between items-center gap-3 bg-gray-50 p-4">
@@ -28,7 +26,7 @@ const NewsCard = ({ news }) => {
             <div className="card-body">
 
                 <h2 className="card-title font-bold text-2xl">{news.title}</h2>
-                <Image src={news.thumbnail_url} alt={news.title} width={500} height={400} className="h-100 w-full my-3"></Image>
+                <Image src={news.thumbnail_url} alt={news.title} width={300} height={400} className="h-100 w-full my-3"></Image>
                 <p className="text-gray-600 line-clamp-4">{news.details}</p>
                 <Link href={`/news/${news._id}`} className="text-orange-600 -mt-1 text-md cursor-pointer">Read More...</Link>
                 <div className="divider"></div>
