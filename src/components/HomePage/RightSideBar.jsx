@@ -4,7 +4,7 @@ import { FcGoogle } from 'react-icons/fc';
 
 const RightSideBar = () => {
     return (
-        <div>
+        <div className='sticky top-10'>
             <h2 className="font-bold mb-4 text-xl">Login With</h2>
             <div className='space-y-3'>
                 <button className='btn flex justify-center items-center gap-2 w-full'><FcGoogle className='text-lg'/>Login with Google</button>

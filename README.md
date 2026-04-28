@@ -14,6 +14,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - Routing Group
 - Image optimization
 - Font optimization
+- Loading 
+- MetaData
 
 
 First, run the development server:

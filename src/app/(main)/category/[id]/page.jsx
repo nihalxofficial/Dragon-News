@@ -4,6 +4,10 @@ import RightSideBar from '@/components/HomePage/RightSideBar';
 import { getCategories, getNewsByCategory } from '@/lib/data';
 import React from 'react';
 
+export const metadata = {
+  title: "Dragon News - Category Page",
+};
+
 
 
 const CategoryNews = async ({ params }) => {
