@@ -13,6 +13,7 @@
 
 
 import LeftSideBar from "@/components/HomePage/LeftSideBar";
+import NewsCard from "@/components/HomePage/NewsCard";
 import RightSideBar from "@/components/HomePage/RightSideBar";
 import { getCategories, getNewsByCategory } from "@/lib/data";
 
@@ -26,18 +27,14 @@ export default async function Home() {
 
 
   return (
-    <div className="grid grid-cols-4 gap-6">
+    <div className="grid grid-cols-4 gap-10">
       <div className="">
         <LeftSideBar categories={categories} activeId={"01"}/>
       </div>
       <div className="col-span-2">
         <h2 className="font-bold mb-4 text-xl">Dragon News Home</h2>
         <div className="space-y-4">
-          {categoryNews.map(news => {
-            return <div key={news._id}>
-              <h2>{news.title}</h2>
-            </div>
-          })}
+          {categoryNews.map(news => <NewsCard key={news._id} news={news}/>)}
         </div>
       </div>
       <div className="">
