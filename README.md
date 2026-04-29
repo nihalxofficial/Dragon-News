@@ -13,6 +13,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - Better Auth
 - MongoDB Atlas
 - React Toast
+- Social Login(Google)
 
 ## Concepts
 - Routing Group
