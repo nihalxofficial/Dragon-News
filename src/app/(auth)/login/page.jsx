@@ -3,6 +3,7 @@ import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const LoginPage = () => {
     const { register, handleSubmit, formState: { errors }, } = useForm();
@@ -12,9 +13,15 @@ const LoginPage = () => {
         const { data, error } = await authClient.signIn.email({
             email,
             password,
+            
             callbackURL: "/",
         })
-        console.log(data);
+        if(data){
+            toast.success("Login successful");
+        }
+        if(error){
+            toast.error(error.message);
+        }
     }
     return (
         <div className='flex justify-center items-center min-h-[80vh] py-20 bg-slate-100'>

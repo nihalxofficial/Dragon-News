@@ -1,8 +1,10 @@
 "use client"
 import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const RegisterPage = () => {
     const {register, handleSubmit, watch, formState: { errors },} = useForm();
@@ -13,11 +15,19 @@ const RegisterPage = () => {
 
         const {data, error} = await authClient.signUp.email({
             name,
-            photo,
+            image: photo,
             email,
             password,
+            
+        },{
+            onSuccess: (ctx) => {
+                toast.success("SignUp Successful");
+                redirect("/");
+            }
         })
-        console.log(data);  
+        if(error){
+            toast.error(error.message)
+        }
     }
     return (
         <div className='flex justify-center items-center py-20 min-h-[80vh] bg-slate-100'>

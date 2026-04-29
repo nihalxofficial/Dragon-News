@@ -12,6 +12,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - React Hook Form
 - Better Auth
 - MongoDB Atlas
+- React Toast
 
 ## Concepts
 - Routing Group
