@@ -9,6 +9,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - React Icons
 - Date fns
 - React fast marquee
+- React Hook Form
 
 ## Concepts
 - Routing Group
