@@ -11,6 +11,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - React fast marquee
 - React Hook Form
 - Better Auth
+- MongoDB Atlas
 
 ## Concepts
 - Routing Group
