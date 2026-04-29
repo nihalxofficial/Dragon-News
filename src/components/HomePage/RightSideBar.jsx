@@ -9,15 +9,18 @@ const RightSideBar = () => {
         const data = await authClient.signIn.social({
             provider: "google",
         });
-        // console.log(data);
-        
+    }
+    const handleGithubSignIn = async () => {
+        const data = await authClient.signIn.social({
+        provider: "github"
+    })
     }
     return (
         <div className='sticky top-10'>
             <h2 className="font-bold mb-4 text-xl">Login With</h2>
             <div className='space-y-3'>
                 <button onClick={handleGoogleSignIn} className='btn flex justify-center items-center gap-2 w-full'><FcGoogle className='text-lg' />Login with Google</button>
-                <button className='btn flex justify-center items-center gap-2 w-full'><FaGithub className='text-lg' />Login with Github</button>
+                <button onClick={handleGithubSignIn} className='btn flex justify-center items-center gap-2 w-full'><FaGithub className='text-lg' />Login with Github</button>
             </div>
 
 

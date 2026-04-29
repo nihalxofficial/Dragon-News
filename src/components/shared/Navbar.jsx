@@ -40,7 +40,7 @@ const Navbar = () => {
                 {isPending ? <span className="loading loading-dots loading-xl"></span>
                     : user ?
                         <>
-                            <Image src={user.image ?? userImage} alt='userImage' width={40} height={40} />
+                            <Image src={user.image ?? userImage} alt='userImage' width={40} height={40} className='rounded-full' />
                             <button onClick={handleSignOut} className='btn bg-red-600 text-white flex justify-between items-center gap-2'> <LuLogOut className='text-xl' />LogOut</button>
                         </>
                         : <button className='btn bg-red-600 text-white'><Link href={"/login"}>Login</Link></button>}
