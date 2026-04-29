@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       data-theme="light"
       className={` h-full antialiased`}
     >
-      <body className={` ${poppins.className} min-h-full flex flex-col`}>
+      <body className={` ${poppins.className} bg-gradient-to-br from-white via-blue-50 to-sky-100 min-h-full flex flex-col`}>
         {children}
         <ToastContainer />
         </body>

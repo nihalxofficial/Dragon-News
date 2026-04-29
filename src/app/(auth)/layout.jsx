@@ -4,10 +4,11 @@ import { montserrat } from '../layout';
 
 const layout = ({children}) => {
     return (
-        <div className={` ${montserrat.className} container mx-auto `}>
+        <div className={`${montserrat.className} max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`}>
             <Navbar/>
-            {children}
-            
+            <main className="py-6">
+                {children}
+            </main>
         </div>
     );
 };
