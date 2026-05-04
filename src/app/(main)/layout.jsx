@@ -5,11 +5,14 @@ import Navbar from "@/components/shared/Navbar";
 const layout = ({ children }) => {
     
     return (
-        <div className="container mx-auto space-y-4 mb-20">
+        <div className="">
             <Header />
-            <BreakingNews />
-            <Navbar />
-            {children}
+            <div className="container mx-auto space-y-4 mt-10 mb-20">
+
+                <BreakingNews />
+                <Navbar />
+                {children}
+            </div>
         </div>
     );
 };

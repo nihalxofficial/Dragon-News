@@ -6,7 +6,6 @@ import { format } from "date-fns";
 const Header = () => {
     return (
         <div className='relative overflow-hidden bg-gradient-to-br from-white via-blue-50 to-sky-100 border-b border-gray-200 py-8 px-4 shadow-sm'>
-            {/* Decorative background elements */}
             <div className='absolute inset-0 opacity-20'>
                 <div className='absolute top-0 right-0 w-96 h-96 bg-blue-200 rounded-full filter blur-3xl'></div>
                 <div className='absolute bottom-0 left-0 w-80 h-80 bg-sky-200 rounded-full filter blur-3xl'></div>
