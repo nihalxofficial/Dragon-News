@@ -10,8 +10,8 @@ const BreakingNews = () => {
         { id: 5, title: "Space Exploration Mission Reaches New Milestone" },
     ]
     return (
-        <div className='flex justify-between items-center gap-4 bg-gradient-to-r from-blue-50 via-gray-50 to-blue-50 border border-blue-200 p-3 rounded-lg shadow-sm'>
-            <button className='bg-gradient-to-r whitespace-nowrap from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm shadow-md transition-all duration-200'>
+        <div className='flex justify-between items-center gap-4 bg-linear-to-r from-blue-50 via-gray-50 to-blue-50 border border-blue-200 p-3 rounded-lg shadow-sm'>
+            <button className='bg-linear-to-r whitespace-nowrap from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm shadow-md transition-all duration-200'>
                 📰 Breaking News
             </button>
             <Marquee pauseOnHover={true} speed={80} gradient={false}>
